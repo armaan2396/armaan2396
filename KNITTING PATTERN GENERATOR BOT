@@ -1,0 +1,23 @@
+<a href="generator.html" class="cta-button">Try Pattern 
+Generator</a> 
+<link rel="stylesheet" href="styles.css"> 
+.main-nav { 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;     padding: 20px 0; 
+    margin-bottom: 40px; 
+} 
+.nav-links {     display: flex; 
+    gap: 20px; 
+} 
+.nav-links a {     color: var(--text-color);     text-decoration: none;     font-weight: 500;     padding: 8px 16px;     border-radius: var(--border-radius); 
+    transition: background-color 0.2s; 
+} 
+function handleLogin(event) { event.preventDefault(); const username = 
+document.getElementById('username').value; const password = document.getElementById('password').value; 
+ 
+if (username && password) { gameState.isLoggedIn = true; gameState.username = username; 
+updateAuthUI(); 
+toggleLogin(); 
+} 
+} 
